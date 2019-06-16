@@ -1,0 +1,100 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background:  url(../img/bg.jpg);
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+} 
+.background img{
+    height: 300px;
+    background-position: unset;
+}
+h1{color: aliceblue; font-size: 60px; font-weight: 500; text-transform: uppercase }
+h2{color: aliceblue; font-size: 30px; font-weight: 200; margin-top: -40px;}
+p{color: aliceblue}
+
+.container{
+    position: relative;
+    top: 180px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: rgb(0, 102, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(156, 156, 156);
+}
+.container .info{
+    margin-top: -35px;
+}
+.container .lista{
+    display: flex;
+}
+.container .lista ul{
+    position: relative;
+    left: -37px;
+    bottom: 30px;
+} 
+.container .lista ul li{
+    list-style-type: none;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.container .lista .dados li{
+    padding-bottom: 12px;
+}
+.container .lista .dados{
+    padding-top: 5px;
+}
+.links{
+    display: flex;
+    position: relative;
+    bottom: 15px;
+    left: -25px;
+    width: 100%;    
+}
+.links a i{
+    position: relative;
+    color: aliceblue;
+    margin: 0 25px;
+    
+}
+.links a:hover .icone i{
+    color: rgb(148, 188, 248);
+    transition: .5s;
+    border-radius: 10px;
+}
+.foto{
+    position: relative;
+    margin-right: -30px;  
+    background-color: aqua;
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    background: url(../img/ft2.PNG) no-repeat;
+    background-size: cover;
+}
+@media(max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .links a i{
+        position: relative;
+        color: aliceblue;
+        margin: 0 10px;
+        
+    }
+    .foto{
+        width: 100%;
+        background-size: auto;
+        
+
+    }
+}
